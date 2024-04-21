@@ -46,7 +46,6 @@ nav li a:hover {
 
 .opcoes {
     height: 38px;
-    border-right: 1px solid #021639;
     justify-content: center;
 }
 
@@ -236,4 +235,43 @@ h1 {
 #saiba-mais a {
     color: white;
     text-decoration: none;
+}
+
+/* footer da página */
+footer{
+    margin-top: 30px;
+    max-height: 184px;
+    width: 100%;
+    background-color: #021639;
+    text-align: center;
+}
+
+footer img{
+    margin-top: 10px;
+    margin-left: 16px;
+}
+footer ul{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+footer li {
+    display: inline-block;
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#copyright img{
+    margin: 0;
+}
+
+#copyright p{
+    display: inline-block;
+    color: #B7B4BF;
+    font-size: 14px;
+}
+#copyright{
+    margin-top: 10px;
 }
