@@ -14,12 +14,15 @@
     width: 345px;
     position: absolute;
 
-    top: 35px;
-    right: 55px;
+    top: 25px;
+    right: 25px;
     font-size: 28px;
     color: black;
 }
-
+#balaodefala{
+    max-height:480px;
+    max-width: 600px;
+}
 .container {
     width: 100%;
     min-height: 500px;
@@ -34,8 +37,6 @@
 }
 
 .item{
-    /* background-color: black; */
-    /* border: 2px solid white; */
     flex: 1 2;
 }
 
@@ -46,6 +47,9 @@
 #login{
     border-radius: 10px;
     background-color: #D4C5FF;
+    width: 500px;
+    height: 560px;
+    padding: 10px;
 }
 
 
