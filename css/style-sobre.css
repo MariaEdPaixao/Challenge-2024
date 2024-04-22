@@ -80,11 +80,27 @@ nav li a:hover {
 /* corpo da página */
 
 #sobre{
-    background-image: url(../img/fundo-sobre.png);
-    height: 534px;
-
-    align-items: center;
-}   
+    /* position: absolute; */ 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   
+}
+#fundo-sobre {
+    position:relative;
+    max-height: 664px;
+    width: 100%;
+}
+#titulo {
+    position: absolute;
+    margin-top: 20px;
+}
+#texto{
+    position: absolute;
+    display: inline-block;
+    margin-left: -350px;
+    margin-top: 50px;
+}
 h1, h2{
     font-size: 60px;
     font-weight: 900;
@@ -162,21 +178,21 @@ h1, h2{
     margin-bottom: 90px;
 }
 
-#link h3{
+#links h3{
     background: linear-gradient(270deg, #021639 0%, #0E21A1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-#link{
+#links{
     margin-top: 50px;
     font-size: 20px;
     text-align: left;
 }
-#link h3 a{
+#links h3 a{
     font-size: 18px;
     text-decoration: none;
-    
+    margin-top: 20px;
 }
 /* footer da página */
 footer{
