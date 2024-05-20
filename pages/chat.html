@@ -1,44 +1,53 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style-chat.css">
-    <title>Chatbot</title>
+
+    <script src="../js/script.js" defer></script>
+    <title>ChatBot</title>
 </head>
 <body>
     <header>
-            <nav id="nav">
-                <a href="chat.html">
-                    <img src="../img/Group 39.png" alt="logo" id="logo">
-                </a>
-                <ul id="menu">
-                    <li id="itens-menu" class="opcoes">
-                        <a href="ajuda.html">
-                            Ajuda
-                        </a>
-                    </li>
-                    <li class="opcoes">
-                        <a href="aprenda.html">Aprenda + </a>
-                    </li>
-                    <li class="opcoes">
-                        <a href="sobre-nos.html">Sobre nós </a>
-                    </li>
-                    <li class="opcoes">
-                        <a href="#"> Chat </a>
-                    </li>
-                </ul> 
-                <div class="perfil">
-                    <a href="../index.html"><p>Perfil</p></a>
-                   <a href="../index.html"> <img src="../img/Group 88.png" alt="perfil"></a>
-                </div>
-            </nav>
-            
-           
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../img/Group 39.png" alt="">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="ajuda.html" class="nav-link">Ajuda</a></li>
+                    <li class="nav-item" id="opA"><a href="aprenda.html" class="nav-link">Aprenda +</a></li>
+                    <li class="nav-item"  id="opS"><a href="sobre.html" class="nav-link"> Sobre nós</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Chat</a></li>
+                </ul>
+            </div>
+            <div class="perfil">
+                <a href="../index.html"><p>Perfil</p></a>
+                <a href="../index.html"><img src="../img/Group 88.png" alt="perfil"></a>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <div class="perfil">
+                <a href="../index.html"><img src="../img/Group 88.png" alt="perfil"></a>
+                <a href="../index.html"><p>Perfil</p></a>
+            </div>
+                <div id="linha"></div>
+            <ul>
+                <li class="nav-item"><a href="ajuda.html" class="nav-link">Ajuda</a></li>
+                <li class="nav-item"><a href="aprenda.html" class="nav-link">Aprenda +</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link"> Sobre nós</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Chat</a></li>
+            </ul>
+
+        </div>
     </header>
-     <main>
-        <div class="linha"></div>
-        <div class="conversa">
+
+    <main class="container">
+        <section class="identificacao">
             <div>
                 <img src="../img/Carlos.png" alt="" id="Carlos"> 
             </div>
@@ -47,35 +56,62 @@
                 <h1>CARlos</h1>
                 <hr>
                 <p>Te ajudarei com o problema do seu veiculo.</p>
-               
             </div> 
             <div class="linha"></div>
-        </div>
-        <div class="data-atual">
+        </section>
+        <section class="dataAtual">
             <p>17/07/2024</p>
-        </div>
-        
-        <div id="fala1">
+        </section>
+        <section class="falaChatBot">
             <img src="../img/Carlos.png" alt="icone-CARlos" id="icone-CARlos">
-            <br>
-            <img src="../img/balao-de-mensagemL.png" alt="balao-de-mensagemC" id="balao-de-mensagemC">
-            <figcaption>Bem-vindo(a), fulano! Sou o Carlos, e juntos vamos descobrir o problema com o seu veiculo. </figcaption>
-        </div>
-        <div id="fala2">
-            
-            <img src="../img/balao-de-mensagemU.png" alt="balao-de-mensagemU" id="balao-de-mensagemU">
-            <figcaption>Lorem ipsum dolor sit amet consectetur.</figcaption>
-            <img src="../img/Group 88.png" alt="icone-user" id="user">
-        </div>
-    </main>
-    <footer class="entrada">
-            <div id="input">
-                <form action="#" method="POST">
-                    <input type="text" name="entrada" id="id-entrada" placeholder="Digite uma mensagem...">
-
-                    <input type="submit" value="" id="enviar">
-                </form>
+            <div id="chatC">
+                <img src="../img/balao-de-mensagemL.png" alt="balao-de-mensagemC" id="balao-de-mensagemC">
+                <p>Bem-vindo(a), fulano! Sou o Carlos, e juntos vamos descobrir o problema com o seu veiculo. </p>
             </div>
-    </footer>  
+        </section>
+        <section class="falaUser">
+            <div id="chatU">
+                <img src="../img/balao-de-mensagemU.png" alt="balao-de-mensagemU" id="balao-de-mensagemU">
+                <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sapiente est officia numquam!</p>
+            </div>
+            <img src="../img/Group 88.png" alt="icone-user" id="user">
+        </section>
+        <article class="envioMensagem">
+            <form action="#" method="get">
+                <input type="text" name="entrada" id="id-entrada" placeholder="Digite uma mensagem...">
+                <input type="submit" value="" id="enviar">
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <section id="icons">
+            <a href="#"><img src="../img/instagram.png" alt=""></a>
+            <a href="https://github.com/MariaEdPaixao/Challenge-2024.git" target="_blank"><img src="../img/github.png" alt=""></a>
+            <a href="#"><img src="../img/facebook.png" alt=""></a>
+        </section>
+        <section id="abas">
+            <ul id="footer">
+                <li id="itens-footer" class="opcoes">
+                    <a href="ajuda.html">
+                        Ajuda
+                    </a>
+                </li>
+                <li class="opcoes">
+                    <a href="aprenda.html">Aprenda + </a>
+                </li>
+                <li class="opcoes">
+                    <a href="sobre.html">Sobre nós </a>
+                </li>
+                <li class="opcoes">
+                    <a href="chat.html"> Chat </a>
+                </li>
+            </ul> 
+        </section>
+        <section id="copyright">
+            <img src="../img/Copyright.png" alt="">
+            <p>2024 DiagnosticMachine</p>
+        </section>
+    </footer>
 </body>
 </html>

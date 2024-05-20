@@ -4,35 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style-sobre.css">
+  
+    <script src="../js/script.js" defer></script>
     <title>Sobre nós</title>
+
 </head>
 <body>
     <header>
-        <nav id="nav">
-            <a href="chat.html">
-                <img src="../img/Group 39.png" alt="logo" id="logo">
-            </a>
-            <ul id="menu">
-                <li id="itens-menu" class="opcoes">
-                    <a href="ajuda.html">
-                        Ajuda
-                    </a>
-                </li>
-                <li class="opcoes">
-                    <a href="aprenda.html">Aprenda + </a>
-                </li>
-                <li class="opcoes">
-                    <a href="sobre-nos.html">Sobre nós </a>
-                </li>
-                <li class="opcoes">
-                    <a href="chat.html"> Chat </a>
-                </li>
-            </ul> 
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../img/Group 39.png" alt="">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="ajuda.html" class="nav-link">Ajuda</a></li>
+                    <li class="nav-item" id="opA"><a href="aprenda.html" class="nav-link">Aprenda +</a></li>
+                    <li class="nav-item"  id="opS"><a href="#" class="nav-link"> Sobre nós</a></li>
+                    <li class="nav-item"><a href="chat.html" class="nav-link"> Chat</a></li>
+                </ul>
+            </div>
             <div class="perfil">
                 <a href="../index.html"><p>Perfil</p></a>
                 <a href="../index.html"><img src="../img/Group 88.png" alt="perfil"></a>
             </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+            </div>
         </nav>
+        <div class="mobile-menu">
+            <div class="perfil">
+                <a href="../index.html"><img src="../img/Group 88.png" alt="perfil"></a>
+                <a href="../index.html"><p>Perfil</p></a>
+            </div>
+            <div id="linha"></div>
+            <ul>
+                <li class="nav-item"><a href="ajuda.html" class="nav-link">Ajuda</a></li>
+                <li class="nav-item"><a href="aprenda.html" class="nav-link">Aprenda +</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Sobre nós</a></li>
+                <li class="nav-item"><a href="chat.html" class="nav-link"> Chat</a></li>
+            </ul>
+
+        </div>
     </header>
     <main>
         <section id="sobre">
@@ -50,9 +63,7 @@
         <h2 id="time">Nosso time: </h2>
         <section id="participantes">
             <div id="part1">
-                <!-- <div id="img-post"> -->
-                    <img src="../img/larissa.png" alt="">
-                <!-- </div> -->
+                    <img src="../img/larissa.png" alt="" class="foto">
                 <div class="container"> 
                     <div class="infos">
                         <h3>Larissa Freitas</h3>
@@ -65,9 +76,7 @@
                 </div>
             </div>
             <div id="part2">
-                <!-- <div id="img-post"> -->
-                    <img src="../img/maria.png" alt="">
-                <!-- </div> -->
+                    <img src="../img/maria.png" alt="" class="foto">
                 <div class="container"> 
                     <div class="infos">
                         <h3>Maria Paixão</h3>
@@ -80,9 +89,7 @@
                 </div>
             </div>
             <div id="part3">
-                <!-- <div id="img-post"> -->
-                    <img src="../img/luis.png" alt="">
-                <!-- </div> -->
+                    <img src="../img/luis.png" alt="" class="foto">
                 <div class="container"> 
                     <div class="infos">
                         <h3>Luis Carlos</h3>
@@ -118,7 +125,7 @@
                     <a href="aprenda.html">Aprenda + </a>
                 </li>
                 <li class="opcoes">
-                    <a href="sobre-nos.html">Sobre nós </a>
+                    <a href="sobre.html">Sobre nós </a>
                 </li>
                 <li class="opcoes">
                     <a href="chat.html"> Chat </a>

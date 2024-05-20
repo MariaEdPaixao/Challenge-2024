@@ -4,36 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style-ajuda.css">
+
+    <script src="../js/script.js" defer></script>
     <title>Ajuda</title>
 </head>
+
 <body>
     <header>
-        <nav id="nav">
-            <a href="chat.html">
-                <img src="../img/Group 39.png" alt="logo" id="logo">
-            </a>
-            <ul id="menu">
-                <li id="itens-menu" class="opcoes">
-                    <a href="ajuda.html">
-                        Ajuda
-                    </a>
-                </li>
-                <li class="opcoes">
-                    <a href="aprenda.html">Aprenda + </a>
-                </li>
-                <li class="opcoes">
-                    <a href="sobre-nos.html">Sobre nós </a>
-                </li>
-                <li class="opcoes">
-                    <a href="#"> Chat </a>
-                </li>
-            </ul> 
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../img/Group 39.png" alt="">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Ajuda</a></li>
+                    <li class="nav-item" id="opA"><a href="aprenda.html" class="nav-link">Aprenda +</a></li>
+                    <li class="nav-item"  id="opS"><a href="sobre.html" class="nav-link"> Sobre nós</a></li>
+                    <li class="nav-item"><a href="chat.html" class="nav-link"> Chat</a></li>
+                </ul>
+            </div>
             <div class="perfil">
                 <a href="../index.html"><p>Perfil</p></a>
                 <a href="../index.html"><img src="../img/Group 88.png" alt="perfil"></a>
             </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+            </div>
         </nav>
+        <div class="mobile-menu">
+            <div class="perfil">
+                <a href="../index.html"><img src="../img/Group 88.png" alt="perfil"></a>
+                <a href="../index.html"><p>Perfil</p></a>
+            </div>
+                <div id="linha"></div>
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Ajuda</a></li>
+                <li class="nav-item"><a href="aprenda.html" class="nav-link">Aprenda +</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link"> Sobre nós</a></li>
+                <li class="nav-item"><a href="chat.html" class="nav-link"> Chat</a></li>
+            </ul>
+
+        </div>
     </header>
+
     <main>
         <section class="item">
             <figure id="container">
@@ -41,20 +55,19 @@
                 <h1><figcaption><b>Algumas dicas:</figcaption></h1>
             </figure>           
         </section>
-        <section>
+        <section id="conteudo">
             <div class="titulo">
                 <h2>Partes do Carro</h2>
             </div>
             <div class="img">
-                <img src="../img/partes-do-carro.png" alt="">
+                <img src="../img/partes-do-carro.png" alt="" class="dica">
             </div>
-        </section>
-        <section>
+        
             <div class="titulo">
                 <h2>Principais Peças</h2>
             </div>
             <div class="img">
-                <img src="../img/principais-pecas.png" alt="">
+                <img src="../img/principais-pecas.png" alt="" class="dica">
             </div>
         </section>
     </main>
@@ -75,7 +88,7 @@
                     <a href="aprenda.html">Aprenda + </a>
                 </li>
                 <li class="opcoes">
-                    <a href="sobre-nos.html">Sobre nós </a>
+                    <a href="sobre.html">Sobre nós </a>
                 </li>
                 <li class="opcoes">
                     <a href="chat.html"> Chat </a>
@@ -87,5 +100,7 @@
             <p>2024 DiagnosticMachine</p>
         </section>
     </footer>
+
 </body>
+
 </html>
